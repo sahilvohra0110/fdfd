@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        
+      const sahil = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+      //creating a function
+
+      const golu = (sahil, element) => {
+        let start = 0; //start of the array
+        let end = sahil.length - 1; //checking array from reverse
+
+
+        while (end >= start) {
+          let mid = parseInt((start + end) / 2); //to take mid point of array
+
+          if (sahil[mid] == element) {
+            return mid;
+
+          } else if (element < sahil[mid]) {
+            end = mid - 1;
+
+          } else {
+            start = mid + 1;
+          }
+        }
+        return 'oops';
+      };
+
+      document.write(golu(sahil, 100));
+
+      
+    </script>
+  </body>
+</html>

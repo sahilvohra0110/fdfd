@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function digsum(input){
+        //     var x = parseInt(prompt("Enter digits: "));
+        //     var sum= 0;
+        //     while(x!=0){
+        //         var rem= x%10;
+        //         sum= sum+rem;
+        //         x= Math.floor(x/10);
+
+        //     }
+        //     console.log(sum);
+
+        // }
+
+        // function factorial(a){
+        //     if (a==0){
+        //     return 1} 
+        //     else {return a*factorial(a-1) 
+        // }}
+        // console.log(factorial(5))
+
+        function guessNumber() {
+        
+        var random = Math.floor(Math.random() * 10) + 1; 
+
+        // console.log(random)
+        
+        var number = parseInt(prompt('Guess a number from 1 to 10: '));
+
+        while(number !== random) {
+        number = parseInt(prompt('Guess a number from 1 to 10: '));}
+
+
+        if(number == random) {
+        console.log('You guessed the correct number.');}
+        }
+
+        guessNumber();
+
+    </script>
+</body>
+</html>
